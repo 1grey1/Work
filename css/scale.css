@@ -1,0 +1,43 @@
+.scale p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.scale .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scale .container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #151C22;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    width: 200px;
+    height: 64px;
+    margin-top: 40px;
+}
+
+.scale .container .scale-list{
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+}
+
+.scale .container .scale-empty {
+    width: 160px;
+    height: 2px;
+    background-color: #E5E5E5;
+}
+
+.scale .container .scale-comletion {
+    width: 40px;
+    height: 2px;
+    background-color: #151C22;
+}
