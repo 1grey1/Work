@@ -1,6 +1,5 @@
 .cover {
     background-color: #F1F2F4;
-
 }
 
 .cover .container {
@@ -36,6 +35,7 @@
     font-size: 128px;
     color: #151C22;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .cover .column-left a {
@@ -64,13 +64,18 @@
     z-index: 1;
 }
 
-.cover .column-right .background-left {
+.cover .column-right::after,
+.cover .column-right::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     margin: 0;
     height: 176px;
     width: 232px;
+}
+
+.cover .column-right::after {
+    top: 0;
+    left: 0;
     background-image:
         repeating-linear-gradient(
             45deg,
@@ -79,13 +84,9 @@
         ); 
 } 
 
-.cover .column-right .background-right {
-    position: absolute;
+.cover .column-right::before {
     right: 0;
     bottom: 0;
-    margin: 0;
-    height: 176px;
-    width: 232px;
     background-image:
         repeating-linear-gradient(
             -45deg,
@@ -97,7 +98,7 @@
 .cover .arrow {
     position: absolute;
     bottom: 49.5px;
-    left: 0;
+    left: 15px;
     transition-duration: 300ms;
 }
 

@@ -1,0 +1,212 @@
+.product {
+    margin-top: 52px;
+}
+
+
+.product .container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.product .container .product-all {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+}
+
+.product .container .product-all .product-img {
+    margin: 0 60px;
+
+}
+
+.product .container .product-all .product-img img {
+    margin-bottom: 20px;
+}
+
+.product .container .product-all .product-img .product-img-mini {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .container .product-all .product-img .product-img-mini img {
+    margin: 0;
+}
+
+.product .container .product-all .product-img .product-img-mini img:not(:nth-child(4)) {
+    margin-right: 20px;
+}
+
+.product .container .product-all .arrow-btn{
+    width: 12px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: 190px;
+    border: none;
+    background-color: #fff; 
+}
+
+.product .container .product-all .prev-btn {
+    background-image: url("../img/product/Vector-left.svg");
+}
+
+.product .container .product-all .next-btn {
+    background-image: url("../img/product/Vector-right.svg");
+}
+
+.product .container .description {
+    background-color: #F1F2F4;
+    padding: 53px 0 50px 70px;
+    width: 100%;
+}
+
+.product .container .description h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #151C22;
+    margin: 0;
+}
+
+.product .container .description p {
+    width: 370px;
+    height: 87px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #151C22;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.product .container .description h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #151C22;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.product .container .description .form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.product .container .description .form-group label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #B0C3C7;
+    display: none;
+}
+
+.product .container .description .form-group label:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.product .container .description .form-group label:nth-child(2) {
+    background-color: #B0C3C7;
+}
+
+.product .container .description .form-group label:nth-child(2)::before {
+    border-color: #B0C3C7;
+}
+
+.product .container .description .form-group label:nth-child(4) {
+    background-color: #3B6392;
+}
+
+.product .container .description .form-group label:nth-child(4)::before {
+    border-color: #3B6392;
+}
+
+.product .container .description .form-group label:nth-child(6) {
+    background-color: #BFC3C8;
+}
+
+.product .container .description .form-group label:nth-child(6)::before {
+    border-color: #BFC3C8;
+}
+
+.product .container .description .form-group label {
+    display: block;
+    position: relative;
+    border-radius: 100%;
+    width: 16px;
+    height: 16px;
+    transition-duration: 300ms;
+}
+
+.product .container .description .form-group label:hover {
+    transform: scale(1.1)
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked + label::before {
+    display: block !important;
+}
+
+.product .container .description .size {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.product .container .description .size label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #727A82;
+    transition-duration: 300ms;
+    margin: 0;
+}
+
+.product .container .description .size label {
+    margin-right: 20px;
+}
+
+.product .container .description .size label:hover {
+    transform: scale(1.1)
+}
+
+input[type=radio]:checked + label {
+    color: #151C22 !important;
+}
+
+.product .container .description b {
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #151C22;
+    margin-top: 40px;
+}
+
+.product .container .description .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 64px;
+    background-color: #151C22;
+    color: #FFFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 700;
+    margin-top: 50px;
+}
+

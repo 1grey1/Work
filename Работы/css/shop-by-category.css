@@ -37,7 +37,7 @@
     font-weight: 500;
     margin: 0;
     font-size: calc(18px * var(--b-scale));
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .shop-by-category .category-list .category-list-item {

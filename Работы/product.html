@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/shop-by-category.css">
     <link rel="stylesheet" href="./css/news.css">
     <link rel="stylesheet" href="./css/cover.css">
+    <link rel="stylesheet" href="./css/product.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,100 +59,88 @@
     </header>
 
     <main>
-        <section class="cover" id="cover">
+        <section class="product">
             <div class="container">
-                <div class="column-left">
-                    <p>The quality you deserve</p>
-                    <h1>Denim</h1>
-                    <a href="#" class="button">Check new collection</a>
-                </div>
-                    
-                <div class="column-right">
-                    <img src="./img/cover/matheus 1.jpg">
+                <div class="product-all">
+                    <button class="arrow-btn prev-btn"></button>
+                    <div class="product-img">
+                        <img src="./img/product/overalls-1.jpg">
+                        <div class="product-img-mini">
+                            <img src="./img/product/overalls-2.jpg">
+                            <img src="./img/product/overalls-3.jpg">
+                            <img src="./img/product/overalls-4.jpg">
+                            <img src="./img/product/overalls-5.jpg">
+                        </div>
+                    </div>
+                    <button class="arrow-btn next-btn"></button>
                 </div>
 
-                <a href="#bestsellers" class="arrow">
-                    <img src="./img/arrow.svg">
-                </a>
-            </div>
+                <div class="description">
+                    <h1>Overalls</h1>
+                    <p>Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
+                    <form action="" method="post">
+                        <h2>Color</h2>
+                        <div class="form-group">
+                            <input type="radio" name="color" value="" id="color-1" checked>
+                            <label for="color-1"></label>
+
+                            <input type="radio" name="color" value="" id="color-2">
+                            <label for="color-2"></label>
+
+                            <input type="radio" name="color" value="" id="color-3">
+                            <label for="color-3"></label>
+                        </div>
+                        <h2>Size</h2>
+                        <div class="size">
+                            <input type="radio" name="size" value="" id="size-1">
+                            <label for="size-1">XS</label>
+
+                            <input type="radio" name="size" value="" id="size-2" checked>
+                            <label for="size-2">S</label>
+
+                            <input type="radio" name="size" value="" id="size-3">
+                            <label for="size-3">M</label>
+
+                            <input type="radio" name="size" value="" id="size-4">
+                            <label for="size-4">L</label>
+
+                            <input type="radio" name="size" value="" id="size-5">
+                            <label for="size-5">XL</label>
+                        </div>
+                        <b>$160</b>
+                        <input type="hidden" name="product-id" value="">
+                        <input type="submit" value="Add to cart" class="button">
+                    </form>
+                </div>
         </section>
-
-
-        <section class="bestsellers" id="bestsellers">
+            </div>
+        </div>
+        <section class="bestsellers">
             <div class="container">
                 <div class="row-top">
-                    <h2>Bestsellers</h2>
+                    <h2>You may also like</h2>
                     <a href="#">View all</a>
                 </div>
-
-                <div class="products-list">
-                    <a href="#" class="products-list-item">
-                        <h3>Jacket</h3>
-                        <img src="./img/bestsellers/Jacket.jpg">
-                        <b>$120</b>
-                    </a>
+                <div class="products-list" style="flex-wrap: wrap;">
                     <a href="#" class="products-list-item">
                         <h3>Overalls</h3>
                         <img src="./img/bestsellers/Overalls.jpg">
                         <b>$140</b>
                     </a>
                     <a href="#" class="products-list-item">
-                        <h3>Jacket</h3>
-                        <img src="./img/bestsellers/Jacket-1.jpg">
-                        <b>$90</b>
-                    </a>
-                    <a href="#" class="products-list-item">
-                        <h3>Overalls</h3>
-                        <img src="./img/bestsellers/Overalls-1.jpg">
-                        <b>$160</b>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="news" id="news">
-            <div class="container">
-                <div class="row-top">
-                    <h2>News</h2>
-                    <a href="#">View all</a>
-                </div>
-                <div class="news-content">
-                    <img src="./img/news/news.jpg" height="370">
-                    <div class="column-right">
-                        <div class="inner-wrapper">
-                            <h3>G- Star Updates Its<br>Sustainable Collection</h3>
-                            <time>Feb 12, 2020</time>
-                            <p>G-Star Raw is pushing the sustainability movement forward with a collection of stretch denim items for spring 2020 which is particularly designed for reuse...</p>
-                            <a href="#" class="button">Read more ...</a>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </section>
-
-        <section class="shop-by-category" id="shop-by-category">
-            <div class="container">
-                <div class="row-top">
-                    <h2>Shop by category</h2>
-                    <a href="#">View all</a>
-                </div>
-
-                <div class="category-list">
-                    <a href="#" class="category-list-item">
-                        <h3>Jeans</h3>
-                        <img src="./img/categories/Jeans-category.jpg">
-                    </a>
-                    <a href="#" class="category-list-item">
-                        <h3>Shirts</h3>
-                        <img src="./img/categories/Shirts-category.jpg">
-                    </a>
-                    <a href="#" class="category-list-item">
-                        <h3>Jackets</h3>
-                        <img src="./img/categories/Jackets-category.jpg">
-                    </a>
-                    <a href="#" class="category-list-item">
                         <h3>Overalls</h3>
                         <img src="./img/categories/Overalls-category.jpg">
+                        <b>$110</b>
+                    </a>
+                    <a href="#" class="products-list-item">
+                        <h3>Jacket</h3>
+                        <img src="./img/product/jacket-1.jpg">
+                        <b>$70</b>
+                    </a>
+                    <a href="#" class="products-list-item">
+                        <h3>Jacket</h3>
+                        <img src="./img/product/jacket-2.jpg">
+                        <b>$60</b>
                     </a>
                 </div>
             </div>
